@@ -32,8 +32,8 @@ nav a {
 
     aside h2 {
         position: absolute;
-        right: 480px;
-        bottom: 140px;
+        left: 65px;
+        bottom: 185px;
         color: yellow;
     }
     
@@ -58,8 +58,9 @@ nav a {
     }
 
     aside {
-        width: 20rem;
+        width: 20em;
         text-align: center;
+        position: relative;
     }
 
     aside img {

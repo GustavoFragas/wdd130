@@ -44,9 +44,9 @@ nav a {
     img {
         width: var(--width);
         height: auto;
-        border: 1px solid black;
+        border: 1px solid green;
         padding: 2px;
-        box-shadow: 0 0 30px gray;
+        box-shadow: 0 0 30px green;
     }
     
     p {

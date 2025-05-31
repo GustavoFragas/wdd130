@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --primary-color:  #086672;
-    --secondary-color: #85D6AB;
-    --accent1-color:  #055a05;
-    --accent2-color: #36151E;
+    --primary-color:  #1b2e4f;
+    --secondary-color: #3c5a82;
+    --accent1-color:  #a9c5da;
+    --accent2-color: #e8f1f8;
     --heading-font: "Open sans", sans-serif;
     --body-font: "Ancizar serif", sans-serif;
 }
@@ -16,6 +16,44 @@ texto: ancizar serif */
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: 100%;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    background-color:#3c5a82;
+    text-decoration: none;
+}
+
+header nav{
+display: flex;
+grid-column-start: 4;
+grid-column-end: 10;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+font-size: 1.2 rem;
+font-weight: 700;
+color:#086672;
+height: 50px;
+padding: 0.5 rem;
+white-space: nowrap;
+border: 1px  #fff;
+}
+
+
+
+header img{
+width: 150px;
+height: 150px;
+order: -1;
+grid-column-start: 2;
+grid-column-end: 4;
 }
 
 * {
@@ -32,20 +70,17 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    text-align: center;
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -65,20 +100,20 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffffff;
+    background-color: rgba(27, 46, 79, 0.7);
 }
 
 article {
     position: absolute;
-    top: 100px;
-    background-color: rgba(8, 102, 114, 0.7);
+    top: 190px;
+    background-color: rgba(27, 46, 79, 0.7);
     width: 96.5%;
     height: auto;
 }
 
 article p {
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 
 .hero article img {
@@ -87,5 +122,97 @@ article p {
 }
 
 nav a {
-    color: #fff;
+   color:#ffffff;
+    padding: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.history img {
+width: 100%;
+height: auto;
+grid-column-start: 2;
+justify-content: center;
+object-fit: contain;
+}
+
+.p1{
+grid-column-start: 1;
+}
+
+.p2{
+grid-column-start: 3;
+}
+
+section h2 {
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+.adventure {
+    display: flex;
+    gap: 16px;
+    
+}
+
+.adventure img {
+    width: 100px;
+    height: auto;
+   
+}
+
+section{
+    border: 1px solid #000;
+}
+
+figure{
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+    display: flex;
+}
+
+figcaption {
+    background-color:aliceblue;
+    color: #1b2e4f;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    width: 100px;
+    height: auto;
+}
+
+
+.socialmedia a {
+    text-decoration: none;
+    justify-content: flex-end;
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    width: 100px;
+    height: auto;
+}
+
+.socialmedia p {
+    align-items: center;
+    padding-right: 70px;
+}
+
+.socialmedia {
+    align-items: center;
+}
+
+section p {
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+
+nav p {
+    color: #ffffff;
 }

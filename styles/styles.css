@@ -19,26 +19,38 @@ box-sizing: border-box;
     color: turquoise;
 }
 
+body {
+    font-size: 16px;
+    font-family: roboto, arial, sans-serif;
+}
+
 nav {
 background-color: var(--color);
 padding: var(--padding);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 
 nav a {
+    text-decoration: none;
+    font-size: 1.2 rem;
+    font-weight: 700;
     color: white;
-    display: block;
-    padding: 20px;
+    padding: 0.5 rem;
+
     }
 
     aside h2 {
         position: absolute;
-        left: 65px;
-        bottom: 185px;
+        left: 75px;
+        bottom: 165px;
         color: yellow;
     }
     
     h1 {   
         color: darkblue;
+        border-bottom: 1px solid darkblue;
     }
     
     img {
@@ -46,7 +58,9 @@ nav a {
         height: auto;
         border: 1px solid green;
         padding: 2px;
-        box-shadow: 0 0 30px green;
+        box-shadow: 0 0 30px darkblue;
+        margin-left: 10px;
+
     }
     
     p {
@@ -54,13 +68,17 @@ nav a {
     }
 
     main {
-        max-width: 840px;
+        grid-column: 2/3;
+        margin: 1rem;
     }
 
     aside {
-        width: 20em;
+        width: 20rem;
         text-align: center;
         position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
     }
 
     aside img {
@@ -75,12 +93,30 @@ nav a {
         height: auto;
     }
 
-    footer {
-        margin-top: 15px;
+    header, .grid, footer {
         border-top: 1px solid #000;
         text-align: center;
+        max-width: 840px;
+        margin: 0 auto;
     }
 
     a {
         color: white;
     }
+
+    .grid {
+        display: grid;
+        align-items: center;
+    
+    }
+
+    h2{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+   

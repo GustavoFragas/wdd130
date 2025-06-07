@@ -13,7 +13,7 @@ body {
 
 header {
     margin: 0;
-    width: 650px;
+    
     padding-bottom: 15px;
 }
 
@@ -43,7 +43,6 @@ fieldset {
 }
 
 legend {
-    font-size: 0.5rem;
     padding: 0.5rem;
     color: navy;
     font-size: 30px;

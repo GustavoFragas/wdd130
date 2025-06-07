@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: inherit;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    color: darkred;
+}
+
+legend {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid darkred;
+    border-radius: 2%;
+    background-color: lightsalmon;
+    display: grid;
+}
+
+fieldset{
+    display: grid;
+    grid-gap: 0.2rem;
+    margin: 1rem;
+    border: 10px groove darkred;
+    padding: 10px;
+
+}
+
+legend{
+    text-align: center;
+}
+
+label {
+    text-align: center;
+}
+
+footer {
+    margin: 1rem auto 0;
+    color: darkred;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #ccc;
+}
+
+button {
+    margin: 1rem;
+    background-color: coral;
+    color: darkred;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    width: 95%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: lightcoral;
+} 
+
+input[type="text"]  {
+    height: 30px;
+    width: 27rem;
+    
+}
+
+input[type="number"] {
+    height: 30px;
+    display: grid;
+    margin: 0 auto;
+    width: 3rem;
+    text-align: center;
+}
+
+select {
+height: 30px;
+width: 10rem;
+display: grid;
+margin: 0 auto;
+}
+
+textarea{
+height: 200px;
+width: 20rem;
+display: grid;
+margin: 0 auto;
+}
+
+

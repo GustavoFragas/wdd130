@@ -432,5 +432,167 @@ textarea {
     text-align: left;
 }
 
+.tripfirstcontainer {
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    width: 480px;
+    gap: 50px;
+}
+
+.firstt {
+    background-color: var(--primary-color);
+    max-height: 270px;
+    width: 330px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.firstt img {
+    position: relative;
+    margin-left:190px;
+    padding: 10px;
+    bottom: 100px;
+}
+
+.firstt a {
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.firstt a:hover {
+    background-color: var(--accent1-color);
+}
+
+.fieldtrip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    width: 800px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    border: #000 groove 10px;
+    height: 600px;
+    gap: 10px;
+    padding-bottom: 30px;
+    row-gap: 0;
+    margin: 0;
+}
+
+.legendtrip {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column: 1/4;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+    text-wrap: nowrap;
+} 
+
+.mp1 {
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-start: 2;
+    border: 5px outset black;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.fieldtrip img {
+    min-width: 100px;
+    min-height: 100px;
+    
+}
+
+.pborder {
+border-bottom: 1px white solid;
+width: 100%;
+padding: 15px 10px 6px 10px;
+margin: 0;
+text-align: center;
+color: white;
+
+}
+
+.atrip {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+
+.atrip:hover {
+    color: black;
+}
+.tabletrip {
+    border: 5px var(--secondary-color) solid;
+    padding: 1px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid var(--primary-color);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 790px;
+}
+
+caption {
+  padding: 10px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 50px;
+  color: black;
+  text-decoration: underline;
+}
+
+th,
+td {
+  border: 3px solid var(--primary-color);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: center;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+thead th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+th, td {
+    color: white;
+} 
+
+
+
+
+
+
+
+
 
 
